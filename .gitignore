@@ -1,0 +1,41 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+/logs/
+*.log
+
+# Uploads (optional - include if storing uploads in git is not desired)
+# /uploads/*
+# !/uploads/.gitkeep
+
+# Node modules (if using npm/webpack in future)
+/node_modules/
+npm-debug.log
+
+# Composer
+/vendor/
+composer.lock
+
+# PHP
+.php_cs.cache
+
+# Testing
+/tests/coverage/
+
+# Database files
+*.sqlite
+*.db

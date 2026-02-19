@@ -1,0 +1,22 @@
+# Block PHP execution in uploads directory
+<Files *.php>
+    Deny from all
+</Files>
+
+<FilesMatch "\.(php|phtml|php3|php4|php5|phtml|shtml|pht|exe|jsp|asp|aspx)$">
+    Deny from all
+</FilesMatch>
+
+# Disable script execution
+php_flag engine off
+
+# Block access to .htaccess itself
+<Files .htaccess>
+    Deny from all
+</Files>
+
+# Block access to hidden files
+<FilesMatch "^\." >
+    Order allow,deny
+    Deny from all
+</FilesMatch>
